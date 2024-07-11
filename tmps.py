@@ -21,14 +21,14 @@ def play_alert_sound():
 
 pygame.mixer.init()
 
-# Initialize plot
+
 fig, ax = plt.subplots()
 x_data = deque(maxlen=100)  # Store up to 100 data points
 y_data = deque(maxlen=100)
 line, = ax.plot([], [], lw=2)
 ax.set_ylim(0, 100)  # Set y-axis range based on temperature
 
-# Initialize variables for monitoring
+
 alert_threshold = 73
 
 def init():
